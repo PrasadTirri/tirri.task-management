@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 
 
-const initialTasks = [
-  { id: 1, title: 'Task 1', description: 'This is task 1', status: 'To Do' },
-  { id: 2, title: 'Task 2', description: 'This is task 2', status: 'In Progress' },
-  { id: 3, title: 'Task 3', description: 'This is task 3', status: 'Completed' },
-];
+const initialTasks = [];
 
 const TaskManagement = () => {
   const [tasks, setTasks] = useState(initialTasks);
@@ -80,14 +76,14 @@ const TaskManagement = () => {
         <input
         className='input'
           type="text"
-          placeholder="Task Title"
+          placeholder="Title"
           name="title"
           value={newTask.title}
           onChange={handleChange}
         />
         <textarea
         className='input1'
-          placeholder="Task Description"
+          placeholder="Description"
           name="description"
           value={newTask.description}
           onChange={handleChange}
@@ -98,6 +94,7 @@ const TaskManagement = () => {
       <div style={{ display: 'flex', marginTop: 20 }}>
         <div style={{ flex: 1, padding:'1%' }}>
           <h2>To Do</h2>
+          <hr />
           {tasks.map((task) =>
             task.status === 'To Do' && (
               <div key={task.id} style={{ border: '1px solid #ccc',boxShadow:"2px 2px 6px 2px #00000014", backgroundColor:' rgb(58, 178, 238)', borderRadius:'15px', padding: 10, margin:'1%' }}>
@@ -113,6 +110,7 @@ const TaskManagement = () => {
         </div>
         <div style={{ flex: 1, padding:'1%' }}>
           <h2>In Progress</h2>
+          <hr />
           {tasks.map((task) =>
             task.status === 'In Progress' && (
               <div key={task.id} style={{ border: '1px solid #ccc',boxShadow:"2px 2px 6px 2px #00000014", backgroundColor:'rgb(220, 234, 96)', borderRadius:'15px', padding: 10, margin:'1%'  }}>
@@ -127,6 +125,7 @@ const TaskManagement = () => {
         </div>
         <div style={{ flex: 1, padding:'1%' }}>
           <h2>Completed</h2>
+          <hr />
           {tasks.map((task) =>
             task.status === 'Completed' && (
               <div key={task.id} style={{ border: '1px solid #ccc',boxShadow:"2px 2px 6px 2px #00000014", backgroundColor:'rgb(68, 242, 158)', borderRadius:'15px', padding: 10, margin:'1%'  }}>

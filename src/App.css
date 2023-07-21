@@ -41,7 +41,7 @@
   align-items: center;
   font-weight: bold;
   padding: 1%;
-  background: linear-gradient(to right, #958df4, #200fdf);
+  background: linear-gradient(to right, #aaa4ee, #200fdf);
   border-radius: 5px;
   height: 20%;
 }
