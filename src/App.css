@@ -1,23 +1,23 @@
 .App {
   text-align: center;
-  background-color: white;
+  background-color: rgb(237, 207, 157);
   /* background: linear-gradient(to left,rgb(244, 241, 241), white, rgb(244, 241, 241)); */
   border: 1px solid black;
   min-width: 100%;
   min-height: 100vh;
 }
-@media screen and (max-width:370px){
-  .App{
+@media screen and (max-width: 370px) {
+  .App {
     min-width: 200%;
   }
 }
-@media screen and (max-width:200px){
-  .App{
+@media screen and (max-width: 200px) {
+  .App {
     min-width: 300%;
   }
 }
 
-.input{
+.input {
   width: 30%;
   padding: 12px 20px;
   margin: 8px;
@@ -26,16 +26,16 @@
   border-radius: 4px;
   box-sizing: border-box;
 }
-.input1{
+.input1 {
   width: 30%;
   padding: 12px 20px;
-  margin: 8px ;
+  margin: 8px;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
-.button{
+.button {
   color: white;
   text-align: center;
   align-items: center;
@@ -45,7 +45,7 @@
   border-radius: 5px;
   height: 20%;
 }
-.excelButton{
+.excelButton {
   color: white;
   text-align: center;
   font-weight: bold;
@@ -54,67 +54,72 @@
   border-radius: 5px;
   height: 20%;
 }
-.itemButton{
+.itemButton {
   color: white;
-  font-size:100% ;
-  width:20%;
+  font-size: 100%;
+  width: 20%;
   text-align: center;
   font-weight: bold;
   padding: 2%;
-  background-color:rgb(226, 130, 12);
+  background-color: rgb(226, 130, 12);
   border-radius: 5px;
   height: 20%;
   margin: 2px;
 }
-@media screen and (max-width:1000px) {
-  .itemButton{
+@media screen and (max-width: 1000px) {
+  .itemButton {
     color: white;
-    font-size:15px ;
-    width:30%;
+    font-size: 15px;
+    width: 30%;
     text-align: center;
     font-weight: bold;
     padding: 2%;
-    background-color:rgb(226, 130, 12);
+    background-color: rgb(226, 130, 12);
     border-radius: 5px;
     height: 20%;
     margin: 2px;
   }
-  .button{
+  .button {
     margin-top: 3%;
   }
 }
-@media screen and (max-width:1365px) {
-  .complete{
-    
-    width:40%;
-    
+@media screen and (max-width: 1365px) {
+  .complete {
+    width: 40%;
   }
-  .button{
+  .button {
     margin-top: 3%;
   }
 }
-@media screen and (max-width:645px) {
-  .itemButton{
+@media screen and (max-width: 645px) {
+  .itemButton {
     height: 30px;
     width: 60px;
+  }
 }
-}
-@media screen and (max-width:450px) {
-  .buttonContainer{
+@media screen and (max-width: 450px) {
+  .buttonContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+  }
 }
-}
-@media screen and (max-width:700px) {
-  .complete{
+@media screen and (max-width: 700px) {
+  .complete {
     font-size: 12px;
+  }
 }
-}
-@media screen and (max-width:650px) {
-  .backbutton{
+@media screen and (max-width: 650px) {
+  .backbutton {
     height: 20%;
+  }
 }
+
+.name {
+  color: white;
+  font-size: 25px;
+  gap: 5px;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
 }

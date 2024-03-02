@@ -1,5 +1,5 @@
-import './App.css';
-import TaskManagement from './conponents/TaskManagement';
+import "./App.css";
+import TaskManagement from "./components/TaskManagement";
 
 function App() {
   return (
