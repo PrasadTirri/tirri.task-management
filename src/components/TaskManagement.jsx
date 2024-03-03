@@ -71,20 +71,7 @@ const TaskManagement = () => {
     <div style={{ padding: 20 }}>
       <h2 className="name">Prasad Tirri</h2>
       <h2>Task Management App</h2>
-      <div
-        style={{
-          boxShadow: "2px 2px 6px 2px #00000014",
-          borderRadius: "15px",
-          backgroundColor: "lightgrey",
-          padding: "3%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          marginLeft: "20%",
-          alignItems: "center",
-          width: "50%",
-        }}
-      >
+      <div className="container">
         <input
           className="input"
           type="text"
@@ -105,7 +92,7 @@ const TaskManagement = () => {
           Add Task
         </button>
       </div>
-      <div style={{ display: "flex", marginTop: 20 }}>
+      <div className="process">
         <div style={{ flex: 1, padding: "1%" }}>
           <h2>To Do</h2>
           <hr />

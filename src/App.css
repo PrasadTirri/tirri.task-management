@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   background-color: rgb(237, 207, 157);
-  /* background: linear-gradient(to left,rgb(244, 241, 241), white, rgb(244, 241, 241)); */
   border: 1px solid black;
   min-width: 100%;
   min-height: 100vh;
@@ -122,4 +121,35 @@
   gap: 5px;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
     -1px -1px 0 #000;
+}
+.container {
+  box-shadow: 2px 2px 6px 2px #00000014;
+  border-radius: 15px;
+  background-color: lightgrey;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.process {
+  width: 100%;
+  display: flex;
+}
+@media screen and (max-width: 413px) {
+  .container {
+    background-color: lightgray;
+  }
+  .input {
+    width: 90%;
+  }
+  .input1 {
+    width: 90%;
+  }
+  .process {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
