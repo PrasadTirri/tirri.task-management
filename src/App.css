@@ -1,6 +1,11 @@
 .App {
   text-align: center;
-  background-color: rgb(237, 207, 157);
+  background: linear-gradient(
+    to right,
+    rgb(243, 190, 98),
+    rgb(246, 220, 174),
+    rgb(243, 190, 98)
+  );
   border: 1px solid black;
   min-width: 100%;
   min-height: 100vh;
